@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import AlamofireImage
 class MoviesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -27,7 +27,7 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         cell.titleLabel.text = title
         cell.synopsisLabel.text = synopsis
         
-        
+        cell.posterView.af_setImage(withURL: posterUrl!)
         return cell
     }
     
