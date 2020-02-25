@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,6 +19,7 @@
 		DA9AE30523E8FC3A0089A730 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA9AE30323E8FC3A0089A730 /* LaunchScreen.storyboard */; };
 		DA9AE31023E8FC3A0089A730 /* FlixAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9AE30F23E8FC3A0089A730 /* FlixAppTests.swift */; };
 		DA9AE31B23E8FC3A0089A730 /* FlixAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9AE31A23E8FC3A0089A730 /* FlixAppUITests.swift */; };
+		DAFFBD2E24049D5B00250E04 /* MovieDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFFBD2D24049D5B00250E04 /* MovieDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		DA9AE31623E8FC3A0089A730 /* FlixAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlixAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA9AE31A23E8FC3A0089A730 /* FlixAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlixAppUITests.swift; sourceTree = "<group>"; };
 		DA9AE31C23E8FC3A0089A730 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAFFBD2D24049D5B00250E04 /* MovieDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 				DA9AE2FA23E8FC380089A730 /* SceneDelegate.swift */,
 				DA9AE2FC23E8FC380089A730 /* MoviesViewController.swift */,
 				DA9AE2FE23E8FC380089A730 /* Main.storyboard */,
+				DAFFBD2D24049D5B00250E04 /* MovieDetailsViewController.swift */,
 				DA9AE30123E8FC3A0089A730 /* Assets.xcassets */,
 				DA9AE30323E8FC3A0089A730 /* LaunchScreen.storyboard */,
 				DA9AE30623E8FC3A0089A730 /* Info.plist */,
@@ -168,7 +171,6 @@
 				4A1857840206C6AEA0FB47C9 /* Pods-FlixAppTests.debug.xcconfig */,
 				AAC3B7447447CBC124B42A90 /* Pods-FlixAppTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -411,6 +413,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAFFBD2E24049D5B00250E04 /* MovieDetailsViewController.swift in Sources */,
 				DA9AE2FD23E8FC380089A730 /* MoviesViewController.swift in Sources */,
 				DA9AE2F923E8FC380089A730 /* AppDelegate.swift in Sources */,
 				DA1FF73723F218BA00F541BB /* MovieCell.swift in Sources */,

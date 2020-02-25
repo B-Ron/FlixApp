@@ -28,17 +28,24 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         cell.synopsisLabel.text = synopsis
         cell.posterView.af_setImage(withURL: posterUrl!)
         return cell
+        
+      
+        }
+
+           // missing override
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+               print("Loading up the details screen")
+           
+            let cell = sender as! UITableViewCell
+            let indexPath = tableView.indexPath(for: cell)!
+            let movie =  movies[indexPath.row]
+            let detailsViewController = segue.destination as! MovieDetailsViewController
+        detailsViewController.movie = movie
+        tableView.deselectRow(at: <#T##IndexPath#>, animated: true)
     }
     
     
     
-    
-    
-    
-    
-    
-    //yhiuyhih
-    //yftguhiygtfdrftgui
     
     var movies = [[String:Any]]()
     
@@ -62,7 +69,7 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
                 
                 self.movies = dataDictionary["results"] as! [[String: Any]]
                 self.tableView.reloadData()
-            print(dataDictionary)
+            
           // TODO: Get the array of movies
           // TODO: Store the movies in a property to use elsewhere
           // TODO: Reload your table view data
