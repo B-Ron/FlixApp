@@ -13,7 +13,7 @@ class MovieGridViewController: UIViewController, UICollectionViewDataSource,UICo
 
     @IBOutlet weak var collectionView: UICollectionView!
     
-    var movies: [String:Any]!
+    var movies = [[String:Any]]()
 
     
     override func viewDidLoad() {
@@ -22,7 +22,7 @@ class MovieGridViewController: UIViewController, UICollectionViewDataSource,UICo
         collectionView.delegate = self
         collectionView.dataSource = self
          
-        let layout UICollectionViewLayout as! UICollectionViewLayout
+        let layout = UICollectionViewLayout as! UICollectionViewLayout
         
         layout.minimumLineSpacing = 4
         layout.minimumInteritemSpacing = 40
