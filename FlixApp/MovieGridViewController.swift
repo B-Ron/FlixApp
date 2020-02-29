@@ -22,7 +22,7 @@ class MovieGridViewController: UIViewController, UICollectionViewDataSource,UICo
         collectionView.delegate = self
         collectionView.dataSource = self
          
-        let layout = UICollectionViewLayout as! UICollectionViewLayout
+        let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
         
         layout.minimumLineSpacing = 4
         layout.minimumInteritemSpacing = 40
@@ -41,7 +41,7 @@ class MovieGridViewController: UIViewController, UICollectionViewDataSource,UICo
                 } else if let data = data {
                     let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]
                       
-                    self.movies = dataDictionary["results"] as! [String : Any]
+                    self.movies = dataDictionary["results"] as! [[String : Any]]
                         
                     self.collectionView.reloadData()
                     print(self.movies )
