@@ -157,13 +157,13 @@
         <!--Superhero-->
         <scene sceneID="sU9-eB-bBb">
             <objects>
-                <viewController id="rSv-LE-K0s" customClass="MovieGridViewController" sceneMemberID="viewController">
+                <viewController id="rSv-LE-K0s" customClass="MovieGridViewController" customModule="FlixApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cDh-tb-PaH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="6Lr-IR-vgv">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="-6" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Sk6-wV-oXL">
@@ -199,7 +199,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Superhero" id="8FT-Sd-KP5"/>
                     <connections>
-                        <outlet property="collectionView" destination="6Lr-IR-vgv" id="1lM-EO-r2H"/>
+                        <outlet property="collectionView" destination="6Lr-IR-vgv" id="HLZ-VZ-bGT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hPt-BM-jQE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
