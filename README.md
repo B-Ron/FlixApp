@@ -17,9 +17,9 @@
 - [ ] (1pt) Run your app on a real device.
 
 ### App Walkthough GIF
-`TODO://` Add the URL to your animated app walkthough `gif` in the image tag below, `http://g.recordit.co/wARSBHSJxp.gif`. 
+`TODO://` Add the URL to your animated app walkthough `gif` in the image tag below, `https://recordit.co/0jkGVS2yEF`. 
 
-<img src="http://g.recordit.co/wARSBHSJxp.gif" width=250><br>
+<img src="https://recordit.co/0jkGVS2yEF" width=250><br>
 
 ### Notes
 Describe any challenges encountered while building the app.
